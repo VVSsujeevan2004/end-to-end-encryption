@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Send, Lock, ShieldCheck, AlertTriangle, FileText, Info } from 'lucide-react';
-import { Message, User, LogEventType, ForensicLog } from '../types';
+import { Send, Lock, ShieldCheck, AlertTriangle } from 'lucide-react';
+import { Message, User, LogEventType } from '../types';
 import * as CryptoService from '../services/crypto';
 
 interface ChatProps {
@@ -15,7 +15,6 @@ const Chat: React.FC<ChatProps> = ({ currentUser, onLogEvent }) => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputText, setInputText] = useState('');
   const [aesKey, setAesKey] = useState<CryptoKey | null>(null);
-  const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   // Initialize Session Key

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Chat from './components/Chat';
 import Dashboard from './components/Dashboard';
 import { User, UserRole, ForensicLog, LogEventType } from './types';
-import { Shield, MessageSquare, Activity, Settings, UserCircle, LogOut } from 'lucide-react';
+import { Shield, MessageSquare, Activity, Settings, LogOut } from 'lucide-react';
 import * as CryptoService from './services/crypto';
 
 // Mock Current User

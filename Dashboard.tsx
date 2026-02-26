@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ForensicLog, AnalysisResult } from '../types';
 import { analyzeLogs } from '../services/gemini';
-import { Activity, Search, Database, Cpu, Lock, AlertOctagon, RefreshCw } from 'lucide-react';
+import { Activity, Search, Database, Cpu, Lock, AlertOctagon, Terminal, RefreshCw } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
 interface DashboardProps {
